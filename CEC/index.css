@@ -1,0 +1,191 @@
+*{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: brown;
+}
+.header{
+    background: url(imagenes/Img1.jpg);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+}
+.logo{
+    flex: 1 1 auto;
+}
+.logo a{
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+    align-items: initial;
+    text-align: left;
+}
+.logo a:hover{
+    color: red;
+}
+.nav{
+    flex: 4 1 auto;               
+}
+.nav a{ 
+    color: white;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 0 10px;
+    letter-spacing: 2px;
+}
+.nav a :hover{
+    background-color: tomato;
+}
+.Presentacion{
+    display: flex;
+    flex-flow: row nowrap;
+    height: 550px;
+    align-items: center;
+    color:white;
+}
+.cuerpo{
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: #ededed;
+}
+.publicidad{
+    background-color: #df7861;
+    flex: 1 1 20%;
+    flex-flow: row wrap;
+}
+.menu{
+    background-color: rgba(255, 255, 255, .1);
+    border-bottom: 1px solid rgba(255, 255, 255, .7);
+    display: flex;
+    flex-flow: row nowrap;
+    height: 75px;
+    align-items: center;
+}
+    .articulo{
+        flex: 1 1 auto;
+        background-color: #30475e;
+    }
+    .articulo h3{
+        flex: 1 1 100%;
+        text-align: center;
+        background-color: #f1935c;
+    }
+    .articulo img{
+        height: 200px;
+        width: 200px;
+    }
+.idiomas{
+    flex: 1 1 80%;
+    background-color: #df7861;
+}
+    .graduados{
+        flex: 1 1 100%;
+        background-color: #30475e;
+    }
+    .graduados h3{
+        flex: 1 1 100%;
+        align-items: center;
+        text-align: center;
+        background: #f1935c;
+        color: black;
+    }
+    .graduados img{
+        width: 230px;
+        height: 150px;
+        padding: 0%;
+    }
+    .clase{
+        flex: 1 1 45%;
+        background-color: #30475e;
+    }
+        .clase a{
+
+            align-self: center;
+            color: white;
+            font-size: 15px;
+            padding: 5px;
+            background: #30475e;
+            margin: 10px 0;
+            display: inline-block;
+        }
+        .clase a:hover{
+            background-color: red;
+        }
+        .clase h3{
+            flex: 1 1 100%;
+            text-align: center;
+            background-color: #f1935c;
+        }
+        .clase p{
+            background-color: lightsalmon;
+        }
+        .clase img{
+            width: 200px;
+            height: 200px;
+        }
+        .footer{
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            background: #ededed;
+            color: #f1f3f4;
+        }
+            .renglon{
+            background-color: #30475e;
+            border: solid gray;
+            }
+                .direccion a{
+                    text-decoration: none;
+                    color: black;
+                }
+                .direccion:hover{
+                    background-color: tomato;
+                }
+                .direccion a:hover{
+                    background-color: tomato;
+                    color: black;
+                }
+            .pie{
+                text-align: center;
+                background-color: #df7861;
+                flex: 1 1 auto;
+            }
+            .pie h3{
+                flex: 1 1 100%;
+                align-items: center;
+                text-align: center;
+                background: #30475e;
+                color: white;
+            }
+            .pie a{
+                color: white;
+                font-size: 11px;
+                text-transform: uppercase;
+                padding: 0 10px;
+                letter-spacing: 3px;
+            }
+            @media all and (max-width: 800px){
+                .menu{
+                    flex-direction: column;
+                    height: auto;
+                }
+                .cuerpo{
+                    order: 0;
+                    flex-direction: column;
+                }
+                .publicidad{
+                    order: 1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .footer{
+                    order: 2;
+                    flex-direction: column;
+                    display: block;
+                }
+            }

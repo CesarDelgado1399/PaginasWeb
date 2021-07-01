@@ -1,0 +1,147 @@
+*{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: brown;
+}
+.header{
+    background: url(imagenes/Img1.jpg);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+}
+.menu{
+    background-color: rgba(255, 255, 255, .1);
+    border-bottom: 1px solid rgba(255, 255, 255, .7);
+    display: flex;
+    flex-flow: row nowrap;
+    height: 75px;
+    align-items: center;
+}
+.logo{
+    flex: 1 1 auto;
+}
+.logo a{
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+    align-items: initial;
+    text-align: left;
+}
+.logo a:hover{
+    color: red;
+}
+.nav{
+    flex: 4 1 auto;               
+}
+.nav a{ 
+    color: white;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 0 10px;
+    letter-spacing: 2px;
+}
+.nav a :hover{
+    background-color: tomato;
+}
+.Presentacion{
+    display: flex;
+    flex-flow: row nowrap;
+    height: 350px;
+    align-items: center;
+    color:white;
+}
+.cuerpo{
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: #ededed;
+}
+.valores{
+    flex: 1 1 auto;
+    background-color: #df7861;
+}
+.Somos{
+    background: #30475e;
+    flex: 1 1 100%;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+   }  
+   .Somos h2{
+    flex: 1 1 100%;
+    text-align: center;
+    background-color: #f1935c;
+    color: black;
+}
+.mapa{
+    flex: 1 1 auto;
+    background-color: #df7861;
+}
+    .mapa h3{
+        flex: 1 1 100%;
+        text-align: center;
+        background-color: #f1935c;
+        color: black;
+    }
+
+.footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    background: #ededed;
+    color: #f1f3f4;
+}
+    .renglon{
+    background-color: #30475e;
+    border: solid gray;
+    }
+        .direccion a{
+            text-decoration: none;
+            color: black;
+        }
+        .direccion:hover{
+            background-color: tomato;
+        }
+        .direccion a:hover{
+            background-color: tomato;
+            color: black;
+        }
+    .pie{
+        text-align: center;
+        background-color: #df7861;
+        flex: 1 1 auto;
+    }
+    .pie h3{
+        flex: 1 1 100%;
+        align-items: center;
+        text-align: center;
+        background: #30475e;
+        color: white;
+    }
+    .pie a{
+        color: white;
+        font-size: 11px;
+        text-transform: uppercase;
+        padding: 0 10px;
+        letter-spacing: 3px;
+    }
+    @media all and (max-width: 800px){
+        .menu{
+            flex-direction: column;
+            height: auto;
+        }
+        .cuerpo{
+            flex-direction: column;
+        }
+        .mapa{
+            display: flex;
+        }
+        .footer{
+            flex-direction: column;
+            display: block;
+        }
+    }

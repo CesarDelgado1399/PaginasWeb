@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+                                       initial-scale=1.0,
+                                       user-scalable=no,
+                                       maximum-scale=1.0,
+                                       minimum-scale=1.0">
+        <link rel="stylesheet" href="css/fontawesome.min.css">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="Inscripcion.css">
+        <title>Nuevo Ingreso</title>
+</head>
+<body>
+    <div class="padre">
+        <section class="cabecera">
+            <div class="menu">
+                <div class="logo">
+                    <a href="index.html">CEC</a>
+                </div>
+                    <div class="nav">
+                        <a href="Nosotros.html"><i class="fas fa-user-alt" aria-hidden="true"> Quienes somos?</i></a>
+                        <a href="index.html#Idiomas"><i class="fas fa-language" aria-hidden="true"> Idiomas</i></a>
+                        <a href="#Contactanos"><i class="fas fa-phone-alt" aria-hidden="true"> Contactanos</i></a>
+                        <a href="Inscripciones.html"><i class="fas fa-user-edit" aria-hidden="true"> Inscripciones</i></a>
+                        <a href="https://www.facebok.com"><i class="fab fa-facebook-f" aria-hidden="true"> facebok</i></a>
+                        <a href="https://www.twitter.com"><i class="fab fa-twitter" aria-hidden="true"> twitter</i></a>
+                    </div>
+            </div>
+        </section>
+        <section class="registro">
+            <div class="datos">
+                <h3>Inscribete y sigue superandote!!!</h3>
+                <form class="form-consulta" action="envia.php" method="POST">
+                            <label>
+                                Nombre y Apellidos:<spam>*</spam> <br>
+                                <input type="text" name="nombre" placeholder="Nombre y Apellido" class="campo-form" required> <!--Required no te deja avanzar si no se llena-->
+                            </label>
+                            <label>
+                                Direccion:<spam>*</spam> <br>
+                                <input type="text" name="direccion" class="campo-form" required>
+                            </label>
+                            <label>
+                                Correo: <spam>*</spam> <br>
+                                <input type="email" name="email" placeholder="ejemplo@ugto.mx" class="campo-form" required>
+                            </label>
+                            <label>
+                                Telefono: <spam>*</spam> <br>
+                                <input type="tel" name="tel" placeholder="123-45-78" class="campo-form">
+                            </label>
+                            <label>
+                                Edad: <spam>*</spam> <br>
+                                <input type="number" min="10" max="80" name="edad" class="campo-form">
+                            </label>
+                            <label>
+                                Idioma:<spam>*</spam><br><select name="Idioma" class="campo-form" required>
+                                    <option>Ingles</option>
+                                    <option>Aleman</option>
+                                    <option>Italiano</option>
+                                    <option>Japones</option>
+                                    <option>Frances</option>
+                                </select><br>
+                            </label>
+                            <label>
+                                Cuales son tus expectativas sobre este curso que estas por comenzar
+                            <textarea cols="50" rows="10" name="Opinion" class="campo-form"></textarea>
+                            </label>
+                            <input type="submit" value="Enviar" class="btn-form"/>
+                            <input type="reset" value="Cancelar"class="btn-form"/>
+                </form>
+            </div>
+            <div class="derechos">
+               <article>
+                <h3>Privacidad</h3>
+                <p>
+                    Sus datos personales, serán utilizados para las siguientes finalidades: <br>
+                a) Registrar su inscripción a la modalidad de capacitación que haya elegido; <br>
+                b) generar listas de asistencias y validación de las mismas; <br>
+                c) emisión de constancia de participación o asistencia de acuerdo a la modalidad de que se  trate;  <br>
+                d) establecer  comunicación  para  dar  seguimiento  de  los  cursos  o  aclaración  de  dudas sobre  sus  datos,  notificación  de  cancelación  o  cambio  de  horario,  fecha  o  sede;   <br>
+                e) generar estadísticas para informes obligatorios.De  manera  adicional,  utilizaremos  su  información  personal  para  las  siguientes  finalidades  que  no son necesarias, pero que nos permiten y 
+                facilitan brindarle una mejor atención: <br> a) envío de material de exposición o apoyo; <br> b) invitaciones afuturos eventos. <br>
+                </p>
+               </article>
+            </div>
+        </section>
+        <footer class="footer">
+            <section class="pie">
+                <h3 id="Contactanos">Contactanos</h3>
+                <table class="Contacto">
+                    <tr class="renglon">
+                        <td class="celda">
+                            Tel: (464) 167-84-17
+                        </td>
+                        <td class="direccion">
+                            <a href="Nosotros.html">Boulevar Faja de Oro</a> 
+                        </td>
+                        <td class="celda">
+                            Director: Juan Ponce Tel: (464) 345-57-12
+                        </td>
+                        <td class="celda">
+                            Karina Flores Tel: (464) 123-26-54
+                             <br>Materia: Ingles
+                        </td>
+                    </tr>
+                    <tr class="renglon">
+                        <td class="celda">
+                            Michell Andrade Tel: (464) 234-56-54
+                             <br>Materia: Frances
+                        </td>
+                        <td  class="celda">
+                            Pilar Perales Tel: (464) 543-12-43
+                            <br>Materia: Aleman
+                        </td>
+                        <td  class="celda">
+                            Juan Orozco Tel: (464) 543-12-43
+                            <br>Materia: Japones
+                        </td>
+                        <td  class="celda">
+                                Daniel Rojas Tel: (464) 543-12-43
+                            <br>Materia: Italiano
+                        </td>
+                    </tr>
+                </table>
+                <a href="#">Desarrollado por Cesar Ivan Delgado Alfaro</a>
+            </section>
+        </footer>
+    </div>
+</body>
+</html>
