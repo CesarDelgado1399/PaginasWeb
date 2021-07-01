@@ -1,0 +1,228 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background: linear-gradient(90deg, orange, red);
+}
+
+#header {
+  background: linear-gradient(90deg, orange, red);
+  border-style: double;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 18px;
+}
+
+.nav-link {
+  display: inline-block;
+  list-style: none;
+  font-size: 20px;
+  padding: 15px;
+  position: relative;
+}
+
+.nav-link:hover {
+  animation-name: link-hover;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes link-hover {
+  100% {
+    top: 5px;
+    border-radius: 10px;
+    background-color: rgba(73, 72, 72, 0.466);
+  }
+}
+
+.nav-link a {
+  color: black;
+  text-decoration: none;
+}
+
+#main {
+  background-color: rgba(8, 8, 8, 0.473);
+  display: flex;
+  flex-direction: row-reverse;
+  height: fit-content;
+}
+
+#centro {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 4, 4);
+  border-style: double;
+  width: 80%;
+}
+
+#menu {
+  background-color: orange;
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+  border: 5px;
+  color: black;
+  border-style: double;
+}
+
+.imagen {
+  margin: 20px 0px;
+  border-radius: 20px;
+  width: 40%;
+  height: auto;
+  align-self: center;
+  box-shadow: 0 10px 20px rgba(8, 8, 8, 0.473);
+}
+
+#platillos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.alitas,
+.boneless {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(32, 32, 32);
+  margin: 10px;
+  box-shadow: 0 10px 20px rgba(8, 8, 8, 0.473);
+  border-radius: 10px;
+  height: fit-content;
+}
+
+.alitas h1,
+.boneless h1 {
+  background-color: orange;
+  text-align: center;
+  font-size: xx-large;
+  border-radius: 10px;
+}
+
+.alitas p,
+.boneless p {
+  text-align: justify;
+  color: white;
+  padding: 10px;
+}
+
+.ordenar {
+  font-size: large;
+  border-style: none;
+  background-color: orange;
+  margin: 10px;
+  align-self: flex-end;
+  width: 80px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.ordenar:hover {
+  animation-name: btn-hover;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+
+@keyframes btn-hover {
+  100% {
+    background-color: black;
+    color: orange;
+  }
+}
+
+#aside {
+  background-color: rgb(255, 4, 4);
+  border-style: double;
+  border-color: black;
+  width: 19.1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: row;
+  align-items: center;
+  color: antiquewhite;
+  position: absolute;
+
+  left: 0;
+}
+
+#aside h1 {
+  border: 5px;
+  border-style: double;
+  color: black;
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+  background-color: orange;
+  align-self: stretch;
+}
+
+.ball-1,
+.ball-2,
+.ball-3 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: rgb(248, 247, 247);
+  border-style: double;
+  background: linear-gradient(90deg, orange, red);
+  cursor: pointer;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+
+.ball-1:hover,
+.ball-2:hover,
+.ball-3:hover {
+  animation-name: ball;
+}
+
+.ball-1 {
+  animation-name: ball-1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.ball-2 {
+  animation-name: ball-2;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.ball-3 {
+  animation-name: ball-3;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes ball-1 {
+  0% {
+    left: -50px;
+  }
+
+  100% {
+    left: 50px;
+  }
+}
+@keyframes ball-2 {
+  0% {
+    left: 50px;
+  }
+
+  100% {
+    left: -50px;
+  }
+}
+@keyframes ball-3 {
+  0% {
+    left: -50px;
+  }
+
+  100% {
+    left: 50px;
+  }
+}
