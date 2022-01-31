@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  overflow-x: hidden;
+}
+.alumnos {
+  position: relative;
+  height: 100vh; /*60*/
+  padding: 2rem;
+  overflow-y: scroll;
+  margin-left: 1rem;
+}
+
+.alumnos h1 {
+  margin: 0rem 0rem 1rem 0rem;
+}
+
+.alumnos h3 {
+  margin: 1rem 0rem 0.5rem 0rem;
+}
+
+.tb-lista {
+  width: 100%;
+  text-align: center;
+}
+.tb-lista tr td {
+  padding: 5px 0px;
+}
+
+.a_editar,
+.a_eliminar,
+.a_cerrar {
+  text-decoration: none;
+  color: white;
+  margin: 0.1rem;
+  padding: 0.3rem;
+  border-radius: 5px;
+}
+
+/*Insertar datos, display none*/
+.insertar {
+  background-color: rgba(199, 192, 192, 0.788);
+  position: relative;
+  margin: 0rem 1rem;
+  height: 40vh;
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+  display: none;
+  z-index: 3;
+}
+
+/*BtnAgregar*/
+#btnAgregar {
+  text-decoration: none;
+  color: white;
+  margin: 0.1rem;
+  padding: 0.4rem 0.3rem;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: black;
+  border: none;
+}
+
+.a_editar {
+  background-color: green;
+}
+.a_eliminar {
+  background-color: red;
+}
+.a_cerrar {
+  background-color: tomato;
+  margin-bottom: 1rem;
+}
